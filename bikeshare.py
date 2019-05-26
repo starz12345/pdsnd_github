@@ -63,7 +63,7 @@ def display_data(df):
         if preview != 'yes':
             break
 
-        print(df.head(count))  # or df.sample()
+        print(df.head(count))
         count += 5
         print("Would you like to see more? Enter yes or no")
 
