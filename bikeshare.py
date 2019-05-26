@@ -28,7 +28,6 @@ def get_filters():
             continue
         break
 
-
     # TO DO: get user input for month (all, january, february, ... , june)
     month = ""
     print("Which month do you want? Type 'all' to see all months.")
@@ -52,6 +51,7 @@ def get_filters():
     print('-' * 40)
     return city, month, day
 
+
 def display_data(df):
     """
     Displays raw data depending on the user specifications.
@@ -63,7 +63,7 @@ def display_data(df):
         if preview != 'yes':
             break
 
-        print(df.head(count)) # or df.sample()
+        print(df.head(count))
         count += 5
         print("Would you like to see more? Enter yes or no")
 
@@ -109,9 +109,9 @@ def time_stats(df):
 
     # TO DO: display the most common day of week
     print("\nMost Common Day of the Week")
-    most_day = df['day_of_week'].mode().iloc[0]
+    most_common_day = df['day_of_week'].mode().iloc[0]
 
-    print(most_day)
+    print(most_common_day)
     # TO DO: display the most common start hour
     print("\nMost Common Start Hour")
     df['hour'] = df['Start Time'].dt.hour
