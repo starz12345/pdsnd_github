@@ -1,4 +1,4 @@
-### Date created 
+### Date created
 Created on 23/05/2019
 
 ### Project Title
@@ -12,5 +12,4 @@ The data is provided by Motivate, a bike share system provider for many major ci
 The three large cities include: Chicago, New York City, and Washington DC.
 
 ### Credits
-https://www.motivateco.com
-
+[Motivate](https://www.motivateco.com)
